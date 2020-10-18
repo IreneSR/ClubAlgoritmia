@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+//ireneramirez
+using namespace std;
+int main()
+{
+    long long int M,N, resultado=0;
+    cin>>N>>M;
+    resultado += floor(N / M);
+    resultado += N % M;
+    cout<<resultado<<endl;
+    return 0;
+}
+
+//link: https://omegaup.com/arena/problem/Bellos-Muffins/#problems/Bellos-Muffins
