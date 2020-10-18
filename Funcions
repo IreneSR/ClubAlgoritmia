@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long int n;
+    cin>>n;
+       if (n%2==0){
+           n=n/2;
+       }
+       else{
+           n=n/2.0+0.5;
+           n=-n;
+       }
+    cout<<n<<endl;
+}
+
+//link: https://codeforces.com/problemset/problem/486/A
