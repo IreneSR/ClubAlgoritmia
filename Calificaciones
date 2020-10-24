@@ -1,0 +1,11 @@
+#include <iostream>
+//IreneRamirez
+using namespace std;
+int main()
+{
+    int c1,c2,c3;
+    cin>>c1>>c2>>c3;
+    ((c1+c2+c3)/3)>=6 ? cout<<"1"<<endl : cout<<"0"<<endl;
+}
+
+//link: https://omegaup.com/arena/problem/Calificaciones-cbtis/#problems/Calificaciones-cbtis 
