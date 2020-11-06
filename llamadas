@@ -1,0 +1,47 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+int clave,minutos;
+double costo;
+
+cin>>clave;
+cin>>minutos;
+
+switch(clave){
+
+    case 12:
+    costo=minutos*2;
+    break;
+
+    case 15:
+        costo=minutos*2.2;
+        break;
+
+    case 18:
+        costo=minutos*4.5;
+        break;
+
+        case 19:
+        costo=minutos*3.5;
+        break;
+
+        case 23:
+        costo=minutos*6;
+        break;
+
+        case 25:
+        costo=minutos*6;
+        break;
+
+        case 29:
+        costo=minutos*5;
+        break;
+
+}
+cout<<costo<<endl;
+
+return 0;
+}
