@@ -1,0 +1,70 @@
+#include <iostream>
+//IreneRamirez
+using namespace std;
+
+int main()
+{
+    //ultimo=ultimo digito de la matricula
+    //catdia=cantidad de dias que contiene un mes
+    //dia=dia de la semana
+   int ultimo,catdia,h=0,z;
+   string dia;
+   cin>>ultimo>>catdia>>dia;
+   if(dia.compare("sabado")==0)
+   {
+   z=6;
+   }
+   else if(dia.compare("domingo")==0)
+   {
+   z=7;
+   }
+   else if(dia.compare("lunes")==0)
+   {
+   z=1;
+   }
+   else if(dia.compare("martes")==0)
+   {
+   z=2;
+   }
+   else if(dia.compare("miercoles")==0)
+   {
+   z=3;
+   }
+   else if(dia.compare("jueves")==0)
+   {
+   z=4;
+   }
+   else if(dia.compare("viernes")==0)
+   {
+   z=5;
+   }
+    for(int i=1;i<=catdia;i++)
+   {
+   if(z!=6 && z!= 7)
+   {
+       if((ultimo%2)==1)
+        {
+           if((i%2)==1)
+           {
+            h++;
+           }
+        }
+        if((ultimo%2)==0)
+        {
+           if((i%2)==0)
+           {
+            h++;
+           }
+        }
+   }
+   z++;
+   if(z==8)
+   {
+       z=1;
+   }
+
+   }
+
+  cout<<h;
+}
+//link:https://omegaup.com/arena/problem/occ12nssf22/#problems/occ12nssf22
