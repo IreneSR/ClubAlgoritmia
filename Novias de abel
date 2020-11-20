@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n,k,temp;
+    bool flag=true;
+    cin>>n;
+
+    for (int i=0;i<n; i++){
+        cin>>k;
+
+        if (i==0){
+        temp=k;
+        }
+        else{
+            if(k==temp){
+                flag=false;
+            }
+            temp=k;
+        }
+
+    }
+    if (flag==true){
+        cout<<"ABEL ERES UN GRANDE";
+    }
+    else{
+        cout<<"LO SIENTO ABEL... DAVID SE QUEDA CON TODAS";
+
+    }
+    return 0;
+}
