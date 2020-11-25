@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n=0,s=0,suma=0;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+    s=((i*(i+1))/2);
+    suma+=s;
+    }
+    cout<<endl<<suma;
+return 0;
+//Link:https://omegaup.com/arena/problem/Barbulla-Matematica/#problems/Barbulla-Matematica
+}
