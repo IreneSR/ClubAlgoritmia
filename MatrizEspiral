@@ -1,0 +1,62 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   int Ma[200][200],a,b,c,d,x,i,j,N,M;
+   do{
+   cin>>N>>M;
+    }
+    while(N<0||N>=200 && M<0||M>=200);
+   a=0;
+   b=N;
+   d=M;
+   c=N*M;
+   x=1;
+   i=0;
+
+   while(x<=c)
+   {
+   for(j=a;j<b;j++)
+   {
+   Ma[i][j]=x;
+   x++;
+   }
+   for(i=a+1;i<b;i++)
+   {
+   Ma[i][j-1]=x;
+   x++;
+   }
+   for(j=b-1;j>a;j--)
+   {
+   Ma[i-1][j-1]=x;
+   x++;
+   }
+   for(i=b-1;i>a+1;i--)
+   {
+   Ma[i-1][j]=x;
+   x++;
+   }
+   a++;
+   b--;
+   }
+   for(i=0;i<N;i++)
+    {
+        for(j=0;j<N;j++)
+        {
+        if(Ma[i][j]<10)
+        {
+            cout<<" "<<Ma[i][j]<<" ";
+        }
+        else
+        {
+        cout<<Ma[i][j]<<" ";
+        }
+
+    }
+        cout<<endl;
+
+   }
+//link:https://omegaup.com/arena/problem/Matriz-espiral/#problems/Matriz-espiral
+}
