@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+    char palabra[25];
+    int x=0,y=0,z=0;
+
+    cin>>palabra;
+    x=strlen(palabra);
+    x=x-1;
+
+   for(y=0, z=x; y<=25; y++, z--){
+
+       if(palabra[y]==palabra[z]){
+            cout<<"Si";
+            break;
+             }else{
+              cout<<"No";
+              break;
+             }
+
+   }
+                return 0;
+                //link:https://omegaup.com/arena/problem/Cadenas-especiales/#problems/Cadenas-especiales
+}
