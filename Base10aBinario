@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string Binario(int n)
+{
+    string r;
+    while (n != 0){
+        r += ( n % 2 == 0 ? "0" : "1" );
+        n /= 2;
+    }
+    return r;
+}
+
+int main() {
+    int numero;
+    cin>>numero;
+    cout << "decimal: " << numero << endl;
+    cout << "binario : " << Binario(numero) << endl;
+
+    return EXIT_SUCCESS;
+}
